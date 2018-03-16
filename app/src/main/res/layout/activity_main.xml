@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a74021.lab3.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_btn"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/shoplist"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:backgroundTint="@color/white"
+        app:rippleColor="@color/white"
+        app:backgroundTintMode="src_atop"
+        android:layout_marginRight="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <ListView
+        android:id="@+id/shoppinglist"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"></ListView>
+ <!--       <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="列表为空"
+            android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+<!--
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+-->
+
+</android.support.constraint.ConstraintLayout>

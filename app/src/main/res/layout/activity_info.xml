@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a74021.lab3.infoActivity">
+
+    <RelativeLayout
+        android:id="@+id/Top"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="0dp"
+        android:layout_weight="0.94"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/image"
+            android:layout_width="300dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/back"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/star"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/empty_star" />
+
+        <TextView
+            android:id="@+id/nameInInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Back"
+            android:layout_marginBottom="0dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.02">
+
+            <TextView
+                android:id="@+id/priceInInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/view"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/priceInInfo"
+                android:layout_alignTop="@+id/priceInInfo"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/type"
+                android:layout_alignLeft="@+id/type"
+                android:layout_marginLeft="60dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/addTOList"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shoplist" />
+          <!--  <view
+                android:id="@+id/slimline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignTop="@+id/value"
+                android:layout_marginTop="40dp"
+                android:background="@color/gray"
+                ></view>-->
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_toStartOf="@+id/value"
+                android:layout_marginTop="0dp"
+                android:background="@color/gray" />
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_alignTop="@+id/addTOList"
+                android:layout_below="@+id/value"
+                android:layout_marginTop="70dp"
+                android:background="@color/gray" />
+            <ListView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/line"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+            </ListView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
